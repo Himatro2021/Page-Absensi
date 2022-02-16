@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--CSS Lokal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Judul Halaman -->
+    <link rel="shortcut icon" href="src/favicon.ico">
+    <title> HIMATRO </title>
+
+
+</head>
+<!--Hide value option-->
+
+<body>
+
+    <!--Navbar -->
+    <nav class="navbar navbar-dark  navbar-custom justify-content-center"> 
+            <a class="navbar-brand " href="#" style="font-size: 30px;">
+                <img src="src/logo_hima.png" width="50" height="50" class="d-inline-block align-top" alt="#">
+                HIMATRO
+        
+            </a>
+    </nav>
+    <div id="Judul">
+        <h3 class="text-center">Halaman Absensi Himatro</h3>
+        <form class="container" id="Input">
+            <div class="col form-group">
+                <label for="exampleInputEmail1">Nama</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama">
+              </div>
+              <div class="col form-group">
+                <label for="exampleInputNPM">NPM</label>
+                <input type="NPM" class="form-control" id="exampleInputNPM" aria-describedby="emailHelp" placeholder="NPM">
+              </div>
+              <div class="col form-group" >
+                <label for="exampleFormKeteranganHadir">Kehadiran</label>
+                <select class="form-control" id="exampleFormControlSelect1" onchange="displayDivDemo('hideValuesOnSelect', this)" >
+                  <option value ="0">Hadir</option>
+                  <option value ="1">Sakit</option>
+                  <option value ="2">Izin</option>
+                </select>
+              </div>
+              <div id="hideValuesOnSelect" class="col form-group" >
+                <label for="exampleInputNPM">Keterangan</label>
+                <input type="Keterangan" class="form-control" id="Keterangan" aria-describedby="emailHelp" placeholder="Keterangan">
+              </div>
+              <div class="text-center " style="padding-top: 25px;" >
+                <button type="submit" class="btn" id="btn_submit">Submit</button>
+
+              </div>
+              
+        </form>
+
+    </div>
+    <!--Footer-->
+    <div  class="navbar navbar-dark  justify-content-center" id="Footer">
+    
+   <h5>Copyright @2022</h5>
+        
+    </div>
+   
+
+    <!-- Optional JavaScript -->
+    <!--gradient background-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+          function displayDivDemo(id, elementValue) {
+               document.getElementById(id).style.display = elementValue.value == 2 ? 'block' : 'none';
+            }
+    </script>
+</body>
+
+</html>

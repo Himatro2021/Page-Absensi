@@ -1,0 +1,111 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    
+   
+   
+    
+}
+/*.navbar-custom {
+    background:  #0a0741;
+}*/
+h3{
+    padding-bottom: 25px;
+}
+
+#Judul{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    /*background: #041B2D ;*/
+    color: aliceblue;
+}
+#hideValuesOnSelect {
+    display: none;
+ }
+
+/*Button Animation*/
+#btn_submit{
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+  opacity: 90%;
+}
+
+#btn_submit:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
+    color: #000;
+  }
+  
+  #btn_submit:after {
+    content: "";
+    background: #1abc9c;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  #btn_submit:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  #btn_submit:focus { outline:0; }
+
+#Footer{
+    padding-top: 100px;
+    padding-bottom: 15px;
+    color: aliceblue !important;
+    opacity: 80%;
+}
